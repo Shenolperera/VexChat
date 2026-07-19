@@ -43,7 +43,7 @@ export default function AuthPage({ onLoginSuccess }) {
 
     const handleSendOTP = async () => {
         try {
-            const res = await fetch('http://localhost:5000/api/auth/send-otp', {
+            const res = await fetch('https://vexchat-jz5w.onrender.com/api/auth/send-otp', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, language: lang })
@@ -62,7 +62,7 @@ export default function AuthPage({ onLoginSuccess }) {
 
     const handleRegister = async () => {
         try {
-            const res = await fetch('http://localhost:5000/api/auth/register', {
+            const res = await fetch('https://vexchat-jz5w.onrender.com/api/auth/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, otp, username, password })
@@ -82,7 +82,7 @@ export default function AuthPage({ onLoginSuccess }) {
 
     const handleLogin = async () => {
         try {
-            const res = await fetch('http://localhost:5000/api/auth/login', {
+            const res = await fetch('https://vexchat-jz5w.onrender.com/api/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password })

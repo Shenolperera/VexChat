@@ -63,7 +63,7 @@ export default function ChatPage() {
 
     // 🌟 Socket.io Initialization
     useEffect(() => {
-        socket = io('http://localhost:5000');
+        socket = io('https://vexchat-jz5w.onrender.com');
         socket.emit('register', currentUser);
 
         socket.on('callUser', (data) => {
@@ -83,24 +83,24 @@ export default function ChatPage() {
     }, [currentUser]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/users?currentUser=${currentUser}`).then(res => res.json()).then(data => setAllUsers(data));
+        fetch(`https://vexchat-jz5w.onrender.com/api/users?currentUser=${currentUser}`).then(res => res.json()).then(data => setAllUsers(data));
     }, [currentUser]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const inboxRes = await fetch(`http://localhost:5000/api/inbox/${currentUser}`);
+                const inboxRes = await fetch(`https://vexchat-jz5w.onrender.com/api/inbox/${currentUser}`);
                 const inboxData = await inboxRes.json();
                 const formattedInbox = Object.keys(inboxData).map(username => ({ username, ...inboxData[username] })).sort((a, b) => b.timestamp - a.timestamp);
                 setInbox(formattedInbox);
 
                 if (selectedUser) {
-                    const msgRes = await fetch(`http://localhost:5000/api/messages/${currentUser}/${selectedUser.username}`);
+                    const msgRes = await fetch(`https://vexchat-jz5w.onrender.com/api/messages/${currentUser}/${selectedUser.username}`);
                     const msgData = await msgRes.json();
                     setMessages(msgData);
                     const hasUnread = msgData.some(m => m.receiver === currentUser && !m.read && !m.deletedForEveryone);
                     if (hasUnread) {
-                        await fetch('http://localhost:5000/api/messages/mark-read', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ reader: currentUser, sender: selectedUser.username }) });
+                        await fetch('https://vexchat-jz5w.onrender.com/api/messages/mark-read', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ reader: currentUser, sender: selectedUser.username }) });
                     }
                 }
             } catch (error) {}
@@ -192,11 +192,11 @@ export default function ChatPage() {
         const formData = new FormData();
         formData.append('file', file);
         try {
-            const uploadRes = await fetch('http://localhost:5000/api/upload', { method: 'POST', body: formData });
+            const uploadRes = await fetch('https://vexchat-jz5w.onrender.com/api/upload', { method: 'POST', body: formData });
             const uploadData = await uploadRes.json();
             if (uploadData.success) {
                 const msgData = { sender: currentUser, receiver: selectedUser.username, text: '', type, fileUrl: uploadData.fileUrl };
-                await fetch('http://localhost:5000/api/messages/send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(msgData) });
+                await fetch('https://vexchat-jz5w.onrender.com/api/messages/send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(msgData) });
             }
         } catch (error) { console.error("Upload error", error); }
     };
@@ -243,11 +243,11 @@ export default function ChatPage() {
         setShowEmojiPicker(false);
 
         if (editingMsgId) {
-            await fetch(`http://localhost:5000/api/messages/edit/${editingMsgId}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: newMessage }) });
+            await fetch(`https://vexchat-jz5w.onrender.com/api/messages/edit/${editingMsgId}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: newMessage }) });
             setEditingMsgId(null);
         } else {
             const msgData = { sender: currentUser, receiver: selectedUser.username, text: newMessage, type: 'text' };
-            await fetch('http://localhost:5000/api/messages/send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(msgData) });
+            await fetch('https://vexchat-jz5w.onrender.com/api/messages/send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(msgData) });
         }
         setNewMessage('');
     };
@@ -256,18 +256,18 @@ export default function ChatPage() {
     const handleDeleteChat = async (e, otherUser) => {
         e.stopPropagation();
         if(!window.confirm(`Delete chat with ${otherUser}?`)) return;
-        await fetch('http://localhost:5000/api/chats/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ currentUser, otherUser }) });
+        await fetch('https://vexchat-jz5w.onrender.com/api/chats/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ currentUser, otherUser }) });
         if (selectedUser?.username === otherUser) setSelectedUser(null);
     };
     const handleEditClick = (e, msg) => { e.stopPropagation(); setNewMessage(msg.text); setEditingMsgId(msg.id); setShowOptionsId(null); };
     const handleDelete = async (e, msgId, type) => {
         e.stopPropagation();
-        await fetch(`http://localhost:5000/api/messages/delete/${msgId}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: currentUser, type }) });
+        await fetch(`https://vexchat-jz5w.onrender.com/api/messages/delete/${msgId}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: currentUser, type }) });
         setShowOptionsId(null);
     };
     const handleReact = async (e, msgId, reaction) => {
         e.stopPropagation();
-        await fetch(`http://localhost:5000/api/messages/react/${msgId}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: currentUser, reaction }) });
+        await fetch(`https://vexchat-jz5w.onrender.com/api/messages/react/${msgId}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: currentUser, reaction }) });
         setShowOptionsId(null);
     };
     const handleLogout = () => { localStorage.clear(); window.location.reload(); };
@@ -402,9 +402,9 @@ export default function ChatPage() {
                                                 {isDeleted ? t[lang].deletedMsg : (
                                                     <>
                                                         {msg.type === 'text' && <span className="break-words">{msg.text}</span>}
-                                                        {msg.type === 'image' && <img src={`http://localhost:5000${msg.fileUrl}`} alt="Sent" className="max-w-full rounded-lg cursor-pointer hover:opacity-90" />}
-                                                        {msg.type === 'video' && <video src={`http://localhost:5000${msg.fileUrl}`} controls className="max-w-full rounded-lg" />}
-                                                        {msg.type === 'audio' && <audio src={`http://localhost:5000${msg.fileUrl}`} controls className="w-full sm:w-[250px] h-[40px] rounded-full" />}
+                                                        {msg.type === 'image' && <img src={`https://vexchat-jz5w.onrender.com${msg.fileUrl}`} alt="Sent" className="max-w-full rounded-lg cursor-pointer hover:opacity-90" />}
+                                                        {msg.type === 'video' && <video src={`https://vexchat-jz5w.onrender.com${msg.fileUrl}`} controls className="max-w-full rounded-lg" />}
+                                                        {msg.type === 'audio' && <audio src={`https://vexchat-jz5w.onrender.com${msg.fileUrl}`} controls className="w-full sm:w-[250px] h-[40px] rounded-full" />}
                                                     </>
                                                 )}
                                                 
