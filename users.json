@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1784335818610",
+    "username": "shenol",
+    "phone": "94710448110",
+    "password": "$2b$10$r/cSsIhXIWParh/QeGg2HOcZCxs.2PifzCzoLGi5HGASNayDvLlwe"
+  },
+  {
+    "id": "1784335850000",
+    "username": "ravisha",
+    "phone": "94710448110",
+    "password": "$2b$10$r/cSsIhXIWParh/QeGg2HOcZCxs.2PifzCzoLGi5HGASNayDvLlwe"
+  },
+  {
+    "id": "1784350162578",
+    "username": "perera",
+    "email": "shenoltest5@gmail.com",
+    "password": "$2b$10$fbob.TBchMeZ5.7vm/u9g.aJfzCig2jfIltcOlfNT8htywlm7qdPC"
+  },
+  {
+    "id": "admin-alfa",
+    "username": "Alfa",
+    "email": "alfa@vexchat.com",
+    "password": "$2b$10$uLd1G3m2uTHNuTQmx8UKk.L3V.j7pt5P5AMK5hFXYDOhB/IEjbZoG"
+  }
+]

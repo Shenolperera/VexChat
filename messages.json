@@ -1,0 +1,449 @@
+[
+  {
+    "id": "1784350888883",
+    "sender": "ravisha",
+    "receiver": "Alfa",
+    "text": "hi",
+    "timestamp": 1784350888883,
+    "read": true,
+    "deletedFor": [
+      "Alfa",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784350900595",
+    "sender": "Alfa",
+    "receiver": "ravisha",
+    "text": "yes",
+    "timestamp": 1784350900595,
+    "read": true,
+    "deletedFor": [
+      "Alfa",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784351517715",
+    "sender": "ravisha",
+    "receiver": "Alfa",
+    "text": "test ravi",
+    "timestamp": 1784351517715,
+    "read": true,
+    "deletedFor": [
+      "Alfa",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784351529852",
+    "sender": "Alfa",
+    "receiver": "ravisha",
+    "text": "got",
+    "timestamp": 1784351529852,
+    "read": true,
+    "deletedFor": [
+      "Alfa",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784351543226",
+    "sender": "Alfa",
+    "receiver": "perera",
+    "text": "hi",
+    "timestamp": 1784351543226,
+    "read": true,
+    "deletedFor": [
+      "perera",
+      "Alfa"
+    ]
+  },
+  {
+    "id": "1784351557340",
+    "sender": "perera",
+    "receiver": "Alfa",
+    "text": "im perera",
+    "timestamp": 1784351557340,
+    "read": true,
+    "deletedFor": [
+      "perera",
+      "Alfa"
+    ]
+  },
+  {
+    "id": "1784351569059",
+    "sender": "ravisha",
+    "receiver": "perera",
+    "text": "batta",
+    "timestamp": 1784351569059,
+    "read": true,
+    "deletedFor": [
+      "perera",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784351902769",
+    "sender": "ravisha",
+    "receiver": "perera",
+    "text": "hi",
+    "timestamp": 1784351902769,
+    "read": true,
+    "deletedFor": [
+      "perera",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784351906263",
+    "sender": "ravisha",
+    "receiver": "perera",
+    "text": "hi",
+    "timestamp": 1784351906263,
+    "read": true,
+    "deletedFor": [
+      "perera",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784351926875",
+    "sender": "perera",
+    "receiver": "ravisha",
+    "text": "hii",
+    "timestamp": 1784351926875,
+    "read": true,
+    "deletedFor": [
+      "perera",
+      "ravisha"
+    ]
+  },
+  {
+    "id": "1784352276546917",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "hidd",
+    "timestamp": 1784352276546,
+    "read": true,
+    "edited": true,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {
+      "shenol": "😂",
+      "Alfa": "😂"
+    }
+  },
+  {
+    "id": "1784352288881830",
+    "sender": "shenol",
+    "receiver": "Alfa",
+    "text": "yes",
+    "timestamp": 1784352288882,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {
+      "Alfa": "❤️"
+    }
+  },
+  {
+    "id": "1784353464011804",
+    "sender": "shenol",
+    "receiver": "Alfa",
+    "text": "hii",
+    "timestamp": 1784353464011,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {}
+  },
+  {
+    "id": "1784353747966851",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "🤣ddd",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784353747966,
+    "read": true,
+    "edited": true,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {}
+  },
+  {
+    "id": "1784353755184307",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "",
+    "type": "audio",
+    "fileUrl": "/uploads/1784353755174",
+    "timestamp": 1784353755184,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": true,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {}
+  },
+  {
+    "id": "178435375970894",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "",
+    "type": "audio",
+    "fileUrl": "/uploads/1784353759703",
+    "timestamp": 1784353759708,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {}
+  },
+  {
+    "id": "1784353764669840",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "",
+    "type": "image",
+    "fileUrl": "/uploads/1784353764657.jpg",
+    "timestamp": 1784353764669,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": true,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {
+      "Alfa": "👍"
+    }
+  },
+  {
+    "id": "1784353800187519",
+    "sender": "shenol",
+    "receiver": "Alfa",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784353800187,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {}
+  },
+  {
+    "id": "1784354005542724",
+    "sender": "shenol",
+    "receiver": "Alfa",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784354005542,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {
+      "Alfa": "❤️"
+    }
+  },
+  {
+    "id": "1784354066122632",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "",
+    "type": "audio",
+    "fileUrl": "/uploads/1784354066116.webm",
+    "timestamp": 1784354066122,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [
+      "Alfa",
+      "shenol"
+    ],
+    "reactions": {}
+  },
+  {
+    "id": "1784360592866964",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "hi ",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784360592866,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "178436059531137",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "me",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784360595311,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784360621470688",
+    "sender": "Alfa",
+    "receiver": "shenol",
+    "text": "",
+    "type": "audio",
+    "fileUrl": "/uploads/1784360621460.webm",
+    "timestamp": 1784360621470,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "178436071050078",
+    "sender": "shenol",
+    "receiver": "Alfa",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784360710500,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784360715857661",
+    "sender": "shenol",
+    "receiver": "Alfa",
+    "text": "buruwo",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784360715857,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784370171040505",
+    "sender": "Alfa",
+    "receiver": "ravisha",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784370171040,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784370287908508",
+    "sender": "Alfa",
+    "receiver": "ravisha",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784370287908,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784370293629844",
+    "sender": "ravisha",
+    "receiver": "Alfa",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784370293629,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784370732126200",
+    "sender": "ravisha",
+    "receiver": "Alfa",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784370732126,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784372542126828",
+    "sender": "Alfa",
+    "receiver": "ravisha",
+    "text": "hi",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784372542126,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  },
+  {
+    "id": "1784372551473657",
+    "sender": "ravisha",
+    "receiver": "Alfa",
+    "text": "111",
+    "type": "text",
+    "fileUrl": null,
+    "timestamp": 1784372551473,
+    "read": true,
+    "edited": false,
+    "deletedForEveryone": false,
+    "deletedFor": [],
+    "reactions": {}
+  }
+]
